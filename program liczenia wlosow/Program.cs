@@ -13,6 +13,15 @@ namespace SzacowanieWlosowNaGlowie
         private double gestoscWlosow; // ilosc na cm2
         private double powierzchniaGlowy;
         private double liczbaWlosow;
+        //kosntruktor z domyslnymi wartosciami
+        public Glowa()
+        {
+            obwodGlowy = DomyslnyObwodGlowy;
+            wysokoscCzolla = DomyslnaWysokoscCzola;
+            gestoscWlosow = 100;
+            liczbaWlosow = 0;
+            powierzchniaGlowy = 0;
+        }
 
     }
 }
