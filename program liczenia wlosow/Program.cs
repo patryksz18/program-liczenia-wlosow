@@ -112,6 +112,7 @@ namespace SzacowanieWlosowNaGlowie
                 glowa.Resetuj();
                 Console.WriteLine("Obliczenia zostały zresetowane.");
             }
+
         }
     }
 }
