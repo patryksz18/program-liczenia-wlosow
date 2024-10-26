@@ -22,6 +22,19 @@ namespace SzacowanieWlosowNaGlowie
             liczbaWlosow = 0;
             powierzchniaGlowy = 0;
         }
+        // publiczne metody ustawienia wartosci
+        public void UstawObwodGlowy(double obwod)
+        {
+            obwodGlowy = obwod;
+        }
+        public void UstawWysokoscCzola(double wysokosc)
+        {
+            wysokoscCzolla = wysokosc;
+        }
+        public void UstawGestoscWlosow(double gestosc)
+        {
+            gestoscWlosow = gestosc;
+        }
 
     }
 }
