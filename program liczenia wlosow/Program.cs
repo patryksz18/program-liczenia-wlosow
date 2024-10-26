@@ -93,6 +93,25 @@ namespace SzacowanieWlosowNaGlowie
             glowa.ObliczLiczbeWlosow();
             double liczbaWlosow = glowa.PobierzLiczbeWlosow();
             Console.WriteLine($"Szacunkowa liczba włosów: {liczbaWlosow}");
+            // Porównanie do średniej
+            double procentWiecejMniej = glowa.PorownajDoSredniej();
+            if (procentWiecejMniej > 0)
+            {
+                Console.WriteLine($"Masz {Math.Abs(procentWiecejMniej):F2}% więcej włosów niż przeciętna.");
+            }
+            else
+            {
+                Console.WriteLine($"Masz {Math.Abs(procentWiecejMniej):F2}% mniej włosów niż przeciętna.");
+            }
+
+            // Resetowanie danych
+            Console.WriteLine("Czy chcesz zresetować obliczenia? (tak/nie)");
+            string odpowiedz = Console.ReadLine();
+            if (odpowiedz.ToLower() == "tak")
+            {
+                glowa.Resetuj();
+                Console.WriteLine("Obliczenia zostały zresetowane.");
+            }
         }
     }
 }
