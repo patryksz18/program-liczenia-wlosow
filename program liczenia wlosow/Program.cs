@@ -76,6 +76,23 @@ namespace SzacowanieWlosowNaGlowie
             Glowa glowa = new Glowa();
 
             Console.WriteLine("Program do obliczania szacunkowej liczby włosów na głowie.");
+            // Pobieranie danych od użytkownika
+            Console.Write("Podaj gęstość włosów (liczba włosów na cm²): ");
+            double gestosc = Convert.ToDouble(Console.ReadLine());
+            glowa.UstawGestoscWlosow(gestosc);
+
+            Console.Write("Podaj obwód głowy (w cm): ");
+            double obwod = Convert.ToDouble(Console.ReadLine());
+            glowa.UstawObwodGlowy(obwod);
+
+            Console.Write("Podaj wysokość czoła (w cm): ");
+            double wysokosc = Convert.ToDouble(Console.ReadLine());
+            glowa.UstawWysokoscCzola(wysokosc);
+
+            // Obliczenia
+            glowa.ObliczLiczbeWlosow();
+            double liczbaWlosow = glowa.PobierzLiczbeWlosow();
+            Console.WriteLine($"Szacunkowa liczba włosów: {liczbaWlosow}");
         }
     }
 }
