@@ -69,4 +69,13 @@ namespace SzacowanieWlosowNaGlowie
 
 
     }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Glowa glowa = new Glowa();
+
+            Console.WriteLine("Program do obliczania szacunkowej liczby włosów na głowie.");
+        }
+    }
 }
